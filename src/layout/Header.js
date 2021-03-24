@@ -1,25 +1,13 @@
-import React, { useEffect, useState, Component } from "react";
-
-const headerAPI = "http://yugen.local/wp-json/acf/v2/options/";
+import React, { Component } from "react";
+import Logo from '../../images/quote.png';
 
 function Header() {
-  const [headerData, setUserData] = useState({});
-
-  useEffect(async () => {
-    const b=await getheaderData();
-  }, []);
-
-  const getheaderData = async () => {
-    const response = await fetch(headerAPI);
-    const jsonData = await response.json();
-    setUserData(jsonData);
-  };
   return (
     <header className="hdr">
     	<div className="container">
 	    	<div className="row">
 		    	<div className="col-xl-3">
-			    	<img src={headerData.acf.header_logo}/>
+			    	<img src={Logo}/>
 		    	</div>
 		    	<div className="col-xl-9">
 			    	<nav class="navbar navbar-expand-sm">
