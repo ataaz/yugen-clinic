@@ -180,6 +180,11 @@
   margin-bottom: 60px;
 }
 
+.hs_box{
+  position: relative;
+  z-index: 2;
+}
+
 .hs_box img{
   width:100%;
 }
@@ -211,6 +216,9 @@
   background: #f5faf9;
   padding: 280px 0 50px 0;
   margin-top: -220px;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 .childboxes h3{
@@ -246,6 +254,18 @@
   top: -1px;
   left: 0;
   background-position: center;
+}
+
+.HomeBlogs{
+  padding: 140px 0;
+}
+
+.HomeInstagram{
+  padding: 140px 0;
+}
+
+.BookCTA{
+  padding: 140px 0;
 }
 
 

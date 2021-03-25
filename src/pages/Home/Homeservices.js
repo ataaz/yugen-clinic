@@ -2,11 +2,11 @@ import React from "react";
 import yiconbottom from '../../images/y-icon.png';
 import serviceimg from '../../images/service-img.jpg';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
 
-function Homeservices() {
+function HomeServices() {
   return(
     <div className="HomeServices content-block1 position-relative">
-        <img className="y-icon-bottom" src={yiconbottom} alt=""/>
         <div className="row1">
           <div className="container">
             <div className="row justify-content-center text-center">
@@ -42,6 +42,7 @@ function Homeservices() {
             </div>
           </div>
           <div className="child1 childboxes">
+          <img className="y-icon-bottom" src={yiconbottom} alt=""/>
             <div className="container">
               <h3>Explore All Treatments</h3>
               <div className="">
@@ -96,4 +97,4 @@ function Homeservices() {
     </div>
   );
 }
-export default Homeservices;
+export default HomeServices;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function About() {  
   return (
@@ -9,6 +10,7 @@ function About() {
 	        	<div className="col-xl-6">
             <div className="hero_text">
               <h1>About Page</h1>
+              <Link to="/">Go back</Link>
             </div>
 	        	</div>
           </div>
