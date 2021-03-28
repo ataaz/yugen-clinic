@@ -1,14 +1,30 @@
 import React from "react";
-import yicon from '../../images/y-icon.png';
-import { Link } from 'react-router-dom';
+import insta from '../../images/insta.jpg';
+import instagram from '../../images/instagram.svg';
 
 function HomeInstagram() {
   return(
-    <div className="HomeInstagram text-center content-block1 position-relative">
+    <div className="HomeInstagram text-center position-relative">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8">
-            <h2>Follow us on instagram</h2>
+              <div className="small-heading">
+                <h2><img src={instagram}/> Follow us on instagram</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-xl-3">
+              <img src={insta} alt=""/>
+            </div>
+            <div className="col-xl-3">
+              <img src={insta} alt=""/>
+            </div>
+            <div className="col-xl-3">
+              <img src={insta} alt=""/>
+            </div>
+            <div className="col-xl-3">
+              <img src={insta} alt=""/>
             </div>
           </div>
       </div>

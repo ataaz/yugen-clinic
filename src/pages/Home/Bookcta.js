@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function BookCTA() {
   return(
-    <div className="BookCTA text-center content-block1 position-relative">
+    <div className="BookCTA text-center content-block2 position-relative">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8">

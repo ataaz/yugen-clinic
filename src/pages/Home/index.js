@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Introtext from './Introtext';
 import HomeServices from './Homeservices';
 import HomeBlogs from './Homeblogs';
+import HomeProducts from './Homeproducts';
 import HomeInstagram from './Homeinstagram';
 import BookCTA from './Bookcta';
 import HomeVideo from './Homevideo';
@@ -17,6 +18,7 @@ function Home() {
       <Introtext />
       <HomeServices />
       <HomeBlogs />
+      <HomeProducts />
       <HomeInstagram />
       <BookCTA />
       <HomeVideo />
