@@ -17,13 +17,13 @@ function Introtext() {
             </div>
           </div>
           <div className="row justify-content-center mt-4">
-            <div className="col-xl-3">
+            <div className="col-xl-3 mb-4 mb-md-0">
               <div className="introInner">
                 <img src={icon1} alt=""/>
                 <span>Health Optimization</span>
               </div>
             </div>
-            <div className="col-xl-3">
+            <div className="col-xl-3 mb-4 mb-md-0">
               <div className="introInner">
                 <img src={icon2} alt=""/>
                 <span>Longitivity</span>
