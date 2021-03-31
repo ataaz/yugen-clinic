@@ -35,7 +35,7 @@ function Footer() {
                 <p>Subscribe to our newsletter. You can always stay up to date with our Dermatology Clinic & Cosmetic Center news!</p>
                 <form name="">
                   <input type="email" placeholder="Email Address"></input>
-                  <input type="submit" value="Submit"></input>
+                  <input type="submit" value=""></input>
                 </form>
               </div>
               <span className="copyright">© Yugen Clinic Group 2021. All Rights Reserved</span>
