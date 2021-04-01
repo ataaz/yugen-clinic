@@ -9,8 +9,9 @@ class PageHeader extends React.Component {
                     <div className="row h-100 align-items-center">
                         <div className="col-xl-12">
                             <h1>{this.props.pagename}</h1>
-                            <ul className="list-inline">
+                            <ul className="list-inline mb-0 breadcrumbs">
                                 <li className="list-inline-item"><Link to="#">Home</Link></li>
+                                <i>/</i>
                                 <li className="list-inline-item"><span>{this.props.pagename}</span></li>
                             </ul>
                         </div>
