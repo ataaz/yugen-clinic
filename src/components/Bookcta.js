@@ -1,5 +1,4 @@
 import React from "react";
-import yicon from '../../images/y-icon.png';
 import { Link } from 'react-router-dom';
 
 function BookCTA() {

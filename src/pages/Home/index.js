@@ -7,7 +7,7 @@ import HomeServicesMobile from './HomeservicesMobile';
 import HomeBlogs from './Homeblogs';
 import HomeProducts from './Homeproducts';
 import HomeInstagram from './Homeinstagram';
-import BookCTA from './Bookcta';
+import BookCTA from '../../components/Bookcta';
 import HomeVideo from './Homevideo';
 import Footer from '../../layout/Footer';
 

@@ -1,5 +1,4 @@
 import React , { Component } from "react";
-import yiconbottom from '../../images/y-icon.png';
 import serviceimg from '../../images/service-img.jpg';
 import { Link } from 'react-router-dom';
 import 'react-jquery-plugin';
