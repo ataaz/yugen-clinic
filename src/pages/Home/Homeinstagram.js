@@ -14,16 +14,16 @@ function HomeInstagram() {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-3">
+            <div className="col-3 col-sm-6 col-md-3">
               <img src={insta} alt=""/>
             </div>
-            <div className="col-xl-3">
+            <div className="col-3 col-sm-6 col-md-3">
               <img src={insta} alt=""/>
             </div>
-            <div className="col-xl-3">
+            <div className="col-3 col-sm-6 col-md-3">
               <img src={insta} alt=""/>
             </div>
-            <div className="col-xl-3">
+            <div className="col-3 col-sm-6 col-md-3">
               <img src={insta} alt=""/>
             </div>
           </div>

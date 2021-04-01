@@ -17,19 +17,17 @@ function HomeProducts() {
         autoplaySpeed: 500,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1400,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
+                slidesToShow: 2,
+                slidesToScroll: 1
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 991,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 1
               }
             },
             {
@@ -47,13 +45,9 @@ function HomeProducts() {
   return(
     <div className="HomeProducts">
         <div className="gray_bg">
-            <div className="container-fluid h-100">
+            <div className="container h-100 position-relative">
                 <div className="row h-100">
-                    <div className="col-xl-8 h-100 align-self-center custom_arrow">
-                        <div className="content-block3 mb-5 mb-md-0">
-                            <h2><span>Shop</span> the best <br/>selling products</h2>
-                            <Link to="#" className="btn2">Shop Now</Link>
-                        </div>
+                    <div className="col-9 col-xl-6 col-lg-7 col-md-5 col-sm-5 h-100 align-self-center custom_arrow">
                         <Slider {...product_slider} className="product_slider text-center row">
                             <div className="product_slider_box col-xl-11">
                                 <Link to="#"><img src={Pro1} /></Link>
@@ -71,6 +65,12 @@ function HomeProducts() {
                                 <span><small>XXX</small> AED</span>
                             </div>
                         </Slider>
+                    </div>
+                    <div className="col-xl-4 col-md-5 col-sm-6 h-100">
+                        <div className="content-block3 mb-5 mb-md-0">
+                            <h2><span>Shop</span> the best <br/>selling products</h2>
+                            <Link to="#" className="btn2">Shop Now</Link>
+                        </div>
                     </div>
                 </div>
             </div>

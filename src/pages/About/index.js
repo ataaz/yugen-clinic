@@ -1,21 +1,18 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import Header from '../../layout/Header';
+import PageTitle from '../../layout/PageHeader';
+import BookCTA from './Bookcta';
+import HomeVideo from './Homevideo';
+import Footer from '../../layout/Footer';
 
 function About() {  
   return (
     <div className="About">
-      <div className="hero">
-        <div className="container h-100">
-	        <div className="row align-items-center h-100">
-	        	<div className="col-xl-6">
-            <div className="hero_text">
-              <h1>About Page</h1>
-              <Link to="/">Go back</Link>
-            </div>
-	        	</div>
-          </div>
-        </div>
-      </div>
+      <Header />
+      <PageTitle pagename="Ford" />
+      <BookCTA />
+      <HomeVideo />
+      <Footer />
     </div>
   );
 }

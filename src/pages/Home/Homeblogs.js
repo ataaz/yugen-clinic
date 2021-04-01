@@ -14,7 +14,7 @@ function HomeBlogs() {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-4 mb-4 mb-md-0">
+            <div className="col-xl-4 col-md-4 col-sm-4 mb-4 mb-md-0">
               <div className="blogbox">
                 <Link to="#" className="d-block"><img src={blog1} alt=""/></Link>
                 <span className="blog_date d-block">20 April</span>
@@ -22,7 +22,7 @@ function HomeBlogs() {
                 <Link to="#" className="read_more d-block">Read more</Link>
               </div>
             </div>
-            <div className="col-xl-4 mb-4 mb-md-0">
+            <div className="col-xl-4 col-md-4 col-sm-4 mb-4 mb-md-0">
               <div className="blogbox">
               <Link to="#" className="d-block"><img src={blog2} alt=""/></Link>
                 <span className="blog_date d-block">20 April</span>
@@ -30,7 +30,7 @@ function HomeBlogs() {
                 <Link to="#" className="read_more d-block">Read more</Link>
               </div>
             </div>
-            <div className="col-xl-4">
+            <div className="col-xl-4 col-md-4 col-sm-4">
               <div className="blogbox">
               <Link to="#" className="d-block"><img src={blog3} alt=""/></Link>
                 <span className="blog_date d-block">20 April</span>
@@ -39,7 +39,7 @@ function HomeBlogs() {
               </div>
             </div>
           </div>
-          <div className="text-center mt-4 pt-4 mt-md-5 pt-md-5">
+          <div className="text-center mt-4 pt-4 mt-lg-5 pt-lg-5">
             <Link to="#" className="btn2">Go to blog</Link>
           </div>
       </div>

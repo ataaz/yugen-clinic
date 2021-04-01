@@ -1,30 +1,68 @@
-import React, { Component } from "react";
-import Logo from '../../images/quote.png';
+import React , { Component } from "react";
+import Logo from '../images/header-logo.png';
+import CartIcon from '../svgs/Cart';
+import UserIcon from '../svgs/User';
+import { Link } from 'react-router-dom';
+import 'react-jquery-plugin';
+import $ from "jquery";
 
-function Header() {
-  return (
-    <header className="hdr">
-    	<div className="container">
-	    	<div className="row">
-		    	<div className="col-xl-3">
-			    	<img src={Logo}/>
-		    	</div>
-		    	<div className="col-xl-9">
-			    	<nav class="navbar navbar-expand-sm">
-				    	<ul className="list-inline d-flex top_menu">
-					    	<li><a href="#">Home</a></li>
-					    	<li><a href="#">About</a></li>
-					    	<li><a href="#">Services</a></li>
-					    	<li><a href="#">Blog</a></li>
-					    	<li><a href="#">Shop</a></li>
-					    	<li><a href="#">Appointment</a></li>
-				    	</ul>
-			    	</nav>
-		    	</div>
-	    	</div>
-    	</div>
-	</header>
-  );
+class Header extends Component {
+  componentDidMount() {
+    $('.navbar-toggler').click(() => {
+      $('.navbar-toggler').toggleClass('navbar-open');
+      $('.navbar-collapse').toggleClass('mobile-menu-opened');
+      $('.Header').toggleClass('change_header');
+      $('.navbar-collapse').slideToggle();
+    });
+  }
+  render(){
+    return(
+      <div className="Header">
+        <div className="container">
+          <nav className="navbar navbar-expand-md py-4">
+            <div className="no-gutters row d-flex d-md-none align-items-center justify-content-between w-100">
+              <div className="col-7">
+                <Link className="navbar-brand" to="#"><img src={Logo} /></Link>
+              </div>
+              <div className="col-1">
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </div>
+            <div className="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
+              <Link className="navbar-brand" to="#"><img src={Logo} /></Link>
+              <div className="d-inline-block d-md-flex align-items-center">
+                <ul className="navbar-nav mt-2 mt-lg-0 mr-md-3 mr-lg-5">
+                  <li className="nav-item active">
+                    <Link className="nav-link" to="/">Home</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/about">About</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="#">Services</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="#">Blog</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="#">Shop</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="#">Appointment</Link>
+                  </li>
+                </ul>
+                <div className="form-inline mt-5 my-md-2 my-lg-0 header_icons">
+                  <Link to="#" className="mr-4"><UserIcon/></Link>
+                  <Link to="#"><CartIcon/></Link>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    );
+  }
 }
-
 export default Header;
