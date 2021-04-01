@@ -767,6 +767,14 @@
   margin-bottom: 40px;
 }
 
+.About_Gallery .slick-slide div{
+  text-align: center;
+}
+
+.About_Gallery .slick-slide div img{
+  display: inline;
+}
+
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .navbar-collapse .navbar-brand{display:none;}

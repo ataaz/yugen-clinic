@@ -2,7 +2,7 @@ import React from "react";
 import Header from '../../layout/Header';
 import PageHeader from '../../layout/PageHeader';
 import WhoWeAre from './WhoWeAre';
-import GalleryVariableWidth from './GalleryVariableWidth';
+import AboutGallery from './AboutGallery';
 import CEOMessage from './CEOMessage';
 import ContentBlock2 from './ContentBlock2';
 import BookCTA from '../../components/Bookcta';
@@ -15,7 +15,7 @@ function About() {
       <Header />
       <PageHeader pagename="About Us" />
       <WhoWeAre />
-      <GalleryVariableWidth/>
+      <AboutGallery/>
       <CEOMessage/>
       <ContentBlock2/>
       <BookCTA />
