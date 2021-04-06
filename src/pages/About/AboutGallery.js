@@ -16,18 +16,16 @@ function AboutGallery() {
     slidesToScroll: 1,
     autplay: true,
     autoplaySpeed: 500,
-    centerMode:true,
-    centerPadding:'120px',
     responsive: [
         {
-          breakpoint: 1400,
+          breakpoint: 1024,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1
           }
         },
         {
-          breakpoint: 991,
+          breakpoint: 768,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1

@@ -5,6 +5,7 @@ import WhoWeAre from './WhoWeAre';
 import AboutGallery from './AboutGallery';
 import CEOMessage from './CEOMessage';
 import ContentBlock2 from './ContentBlock2';
+import Team from './Team';
 import BookCTA from '../../components/Bookcta';
 import HomeVideo from './Homevideo';
 import Footer from '../../layout/Footer';
@@ -17,6 +18,7 @@ function About() {
       <WhoWeAre />
       <AboutGallery/>
       <CEOMessage/>
+      <Team/>
       <ContentBlock2/>
       <BookCTA />
       <HomeVideo />
